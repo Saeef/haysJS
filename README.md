@@ -16,3 +16,22 @@ locationLevel:3
 p:2
 ```
 
+
+
+
+<hr />
+  
+   <br />
+   
+  
+  <kbd>hays local1</kbd>
+  ![pop-up screenshot](/images/hayslocal.png?raw=true)
+
+
+ <br />
+   
+  
+  <kbd>hays local2/kbd>
+  ![pop-up screenshot](/images/hayslocal2.png?raw=true)
+
+
