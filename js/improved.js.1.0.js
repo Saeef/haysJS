@@ -173,31 +173,7 @@
           
       }
 
-      /*
-      function step6() {   
-
-          bgreen.className = 'bgreen';
-          dgreen.className = 'dgreen';
-          bgreen.textContent = 'NEW';
-          dgreen.appendChild(agreen);
-          //append to dom
-          var ddd = document.querySelectorAll('.job-search-title')[1];
-          ddd.appendChild(dgreen);
-          console.log('step 4 :' + this.runCss.step4);
-          if (!undefined) {
-                dgreen.style.position = 'absolute';
-                dgreen.style.top = '1%';
-                dgreen.style.left = '105%';
-                dgreen.style.border = '1px solid #afc350';
-                bgreen.style.padding = '5px 3px';
-                bgreen.style.fontSize = '12px';
-                bgreen.style.lineHeight = '18px';
-                bgreen.style.color = '#afc350';   
-          } 
-          console.log('step 6 :' + this.runCss.step6);
-         
-
-      },*/
+      
 
 
   ],//Process:Init
