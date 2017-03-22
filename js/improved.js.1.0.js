@@ -7,7 +7,11 @@
   var sgreen = document.createElement('span');
   var bgreen = document.createElement('a');
   var dgreen = document.createElement('span');
-  
+  var xbt = document.querySelectorAll('.result-list.sponsored-jobs .field.hays-result-rate-value')
+  var doe = null;
+  var daa = null;
+  var remove = null;
+  var timer;
   //Process
   function Process(n, t, l) {
       !function c() {
@@ -119,7 +123,7 @@
              al.textContent = 'View details';
              but.appendChild(al);
              //append to dom
-             var doe = document.querySelector('.field.hays-result-rate-value');
+             doe = document.querySelector('.field.hays-result-rate-value');
              doe.appendChild(but);
              console.log('step 2 :' + this.Init.runCss.step2);
           
@@ -150,7 +154,7 @@
               agreen.textContent = 'NEW';
               sgreen.appendChild(agreen);
               //append to dom
-              var daa = document.querySelector('.field.hays-result-title');
+              daa = document.querySelector('.field.hays-result-title');
               daa.appendChild(sgreen);
               console.log('step 4 :' + this.Init.runCss.step4);
              
@@ -177,7 +181,7 @@
 
           debugger;
           if(sponsored) {
-              var remove = null;
+              remove = null;
               for (var i=0; i < sponsored.length; i++) {
                  console.log(sponsored[i]);
                  sponsored[i];
@@ -203,10 +207,42 @@
                
         }//if sponsored
 
-        else {
+        $(document).ajaxComplete(function() {
+              console.log(sponsored.length);
+                   
+        });
+        timer;
+        $(window).scroll(function() {
 
-          console.log('nothing happened');
-        }
+          if(timer) {
+
+            window.clearTimeout(timer);
+          }
+                 
+            timer = window.setTimeout(function() {
+
+                  for (var i=0; i < xbt.length; i++) {
+                      but = document.createElement('button');
+                      al = document.createElement('a');
+                      step2();
+                      step3();
+                      //xbt[i].appendChild(but);
+                      
+                 }
+
+
+
+            },150);
+                 
+        });
+
+
+        
+
+
+
+
+
        
         next();
       }
@@ -260,18 +296,6 @@
     );//Process:Init.runCode
 
 }, this.Init.timers.medium);//timeout
-
-var lastScrollTop = 0;
-
-window.addEventListener("scroll", function(){ 
-   var st = window.pageYOffset || document.documentElement.scrollTop; 
-   if (st > lastScrollTop){
-       //step1();
-   } else {
-      // upscroll code
-   }
-   lastScrollTop = st;
-}, false);
 
 
 })();
