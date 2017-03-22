@@ -66,7 +66,7 @@ checkifbodyexist();
                 style.innerHTML += ".hays-jobs .job-search-title {margin-bottom:25px; display:inline-block;}\n";
                 style.innerHTML += ".field.hays-result-rate-value {width:45%; padding-left:12px; line-height:14px;font-size:13px;}\n";
                 style.innerHTML += ".hays-jobs .hays-result-title .value {margin-top:0 !important; margin-right:1em;}";
-                style.innerHTML += ".hays-jobs .result-list .result { padding:0; margin:20px auto !important; border:1px solid #e6e6e6; padding-bottom:0; padding-top:20px; background-color:#ffffff;}";
+                style.innerHTML += ".hays-jobs .result-list .result { padding:0; padding-bottom:30px !important; margin:20px auto !important; border:1px solid #e6e6e6; padding-bottom:0; padding-top:20px; background-color:#ffffff;}";
                 style.innerHTML += ".hays-jobs ol.result-list {border:0; width:100%; margin:0 auto;background-color:#f0f0f0;}";
                 style.innerHTML += ".hays-jobs .result-list .result.first {}";
                 style.innerHTML += ".result-list.sponsored-jobs {}";
@@ -90,6 +90,11 @@ checkifbodyexist();
                 style.innerHTML += "p.value {::first-letter:color:#black;}";
                 style.innerHTML += ".blackPound::first-letter {color:#ffffff;font-size:14px;margin-right:4px; border-radius:50%;letter-spacing:6px;text-align:center;padding:0 0px 0px 3px;background-color:#313131;}";
                 style.innerHTML += ".hays-result-sponsored img {right:9999px !important;}";
+                style.innerHTML += ".hays-jobs .result-list .last {padding-bottom:1em !important;}";
+
+                style.innerHTML += ".hays-jobs .hays-result-sponsored img {display:none !important;}";
+
+                style.innerHTML += ".hays-jobs .result-list .result img {right:99999px !important;}";
 
                 //append to head
                 document.getElementsByTagName('head')[0].appendChild(style);
@@ -150,6 +155,7 @@ checkifbodyexist();
                     el.style.padding = '0 3px';
 
 
+
                 }
 
 
@@ -163,13 +169,13 @@ checkifbodyexist();
             document.querySelectorAll('.field.hays-result-rate-value').forEach(function(el) {
 
                 if (el.textContent.charAt(0) == '£') {
-                    console.log(el.textContent.charAt(0));
+                    //console.log(el.textContent.charAt(0));
                     //p::first-letter {color:black;}
                     el.classList.add('blackPound');
 
                 } else {
-                    console.log('do nothing');
-                    console.log(el.textContent.charAt(0));
+                    //console.log('do nothing');
+                    //console.log(el.textContent.charAt(0));
 
                 }
 
@@ -186,7 +192,7 @@ checkifbodyexist();
         ajaxComplete: function() {
             $(document).ajaxComplete(function() {
                 setTimeout(function() {
-                    console.log($('.hays-jobs .result-list .result').length);
+                    //console.log($('.hays-jobs .result-list .result').length);
                     Hays01.addClass();
                 }, 500);
 
