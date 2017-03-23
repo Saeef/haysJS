@@ -82,13 +82,13 @@ checkifbodyexist();
                 style.innerHTML += "div#pageTop1.pageNo.pageCurrent {background-color:#f0f0f0;}";
                 style.innerHTML += ".hays-jobs {background-color:#fff;}";
                 style.innerHTML += ".panel-layout .pl-content {background-color:#f0f0f0 !important;}";
-                style.innerHTML += ".hays-jobs a.butdetails {position: absolute;right: 4%;bottom: 22%;padding: 10px 28px;}";
+                style.innerHTML += ".hays-jobs a.butdetails {position: absolute;right: 4%;bottom: 22%;padding: 10px 23px; text-decoration: none !important;}";
                 style.innerHTML += "a.butdetails.hover,a.butdetails:active {background-color:#002776;text-decoration:none;}";
 
                 style.innerHTML += ".hays-jobs .sponsored-jobs a.butdetails {		 position: absolute;right: 4%;bottom: 32%;padding: 10px 28px;background-color: rgb(0, 159, 218); border: 0px;box-shadow: rgb(4, 121, 165) 0px 0px 1px;color: #fff !important;font-size: 15px;line-height: 22px;vertical-align: middle;cursor: pointer;letter-spacing: .25px;}";
                 style.innerHTML += "#search .pageNo {background-color:#f0f0f0 !important;font-weight: 500;color: #8a8b8d;font-size: 18px;padding: 3px;}";
                 style.innerHTML += "p.value {::first-letter:color:#black;}";
-                style.innerHTML += ".blackPound::first-letter {color:#ffffff;font-size:14px;margin-right:5px;margin-left:-2px; border-radius:50%;letter-spacing:6px;text-align:center;padding:2px 0px 2px 5px;background-color:#313131; display:inline-block;}";
+                style.innerHTML += ".blackPound::first-letter {color:#ffffff;font-size:10px;margin-right:5px; border-radius:50%;letter-spacing:6px;text-align:center;padding:2px 0px 2px 5px;background-color:#313131; display:inline-block;}";
                 style.innerHTML += ".hays-result-sponsored img {right:9999px !important;}";
                 style.innerHTML += ".hays-jobs .result-list .last {padding-bottom:1em !important;}";
 
@@ -102,7 +102,9 @@ checkifbodyexist();
                 style.innerHTML += "field.hays-result-rate-value p.value::before {margin-left:-5px;}";
                 style.innerHTML += "field.hays-result-rate-value p.value {margin-left:0px;}";
                 style.innerHTML += ".hays-jobs .hays-result-title .value a {padding-right:10px; }";
-                style.innerHTML += ".blackPound {display:inline-block;}"
+                style.innerHTML += ".blackPound {display:inline-block;position: absolute; left: 0;}";
+
+                style.innerHTML += ".field.hays-result-rate-value .value{display: block; padding-left: 20px; position: relative;}";
 
 
 
