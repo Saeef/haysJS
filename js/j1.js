@@ -71,7 +71,7 @@ checkifbodyexist();
                 style.innerHTML += ".result-list.sponsored-jobs {}";
                 style.innerHTML += ".hays-jobs .result-list .result:last-child {border-bottom: 1px solid #d2d2d2 !important;}";
                 style.innerHTML += ".butdetails {position: absolute; right: 4%; bottom: 27%; padding: 10px 28px; background-color: rgb(0, 159, 218); border: 0px; box-shadow: rgb(4, 121, 165) 0px 0px 1px; color: #fff !important;font-size:15px;line-height:22px;vertical-align:middle;cursor:pointer;letter-spacing:.25px;}";
-                style.innerHTML += ".hays-jobs .hays-result-location:before, .hays-jobs .hays-result-location .before {color: #313131;}";
+                style.innerHTML += ".hays-jobs .hays-result-location:before, .hays-jobs .hays-result-location .before {color: #313131; font-size:16px;}";
                 style.innerHTML += ".tk-stl-description .value {color: #808080 !important;line-height:18px !important;font-size: 14px;}";
                 style.innerHTML += ".hays-jobs.hays-result-title .value {line-height:1.5em; margin-bottom:.75em;display:block; margin-right:2.5em;vertical-align:bottom;}";
                 style.innerHTML += ".field.hays-result-title.new-job {float:left !important;}";
